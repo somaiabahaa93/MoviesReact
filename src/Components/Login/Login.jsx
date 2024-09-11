@@ -32,7 +32,7 @@ export default function Login() {
       localStorage.setItem("userToken", data.token);
 
       // saveUserData();
-      navigate("/home");
+      navigate("/");
     } else {
       setIsLoading(false);
       setError(data.message);
