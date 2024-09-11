@@ -25,7 +25,7 @@ export default function Register() {
   }
 
   async function sendDataToApi() {
-    const url = "http://localhost:3000/api/v1/auth/frontEndSignup";
+    const url = "https://node-ecomm24.vercel.app/api/v1/auth/frontEndSignup";
     let { data } = await axios.post(url, user);
 
     if (data.message === "success") {

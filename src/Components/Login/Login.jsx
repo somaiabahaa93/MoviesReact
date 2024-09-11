@@ -23,7 +23,7 @@ export default function Login() {
 
   async function sendDataToApi() {
     let { data } = await axios.post(
-      "http://localhost:3000/api/v1/auth/frontEndLogin",
+      "https://node-ecomm24.vercel.app/api/v1/auth/frontEndLogin",
       user
     );
 
